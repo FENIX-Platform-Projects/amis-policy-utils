@@ -16,6 +16,7 @@
         <apache.commons.version>3.3</apache.commons.version>
         <postgres.driver.version>9.4-1201-jdbc41</postgres.driver.version>
         <junit.version>4.11</junit.version>
+        <javax.version>7.0</javax.version>
     </properties>
 
     <build>
@@ -38,6 +39,14 @@
 
 
     <dependencies>
+
+        <!-- J2EE -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javax.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- D3S commons & utils -->
         <dependency>
